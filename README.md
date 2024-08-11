@@ -11,67 +11,67 @@ This repository contains the codebase for the paper **Planning in the Dark: LLM-
 
 ## Directory Structure
 ```bash
- Official-LLM-Symbolic-Planning-without-Experts
-├──  README.md
-├──  conf
-│   ├──  base
-│   └──  local
+📂 Official-LLM-Symbolic-Planning-without-Experts
+├── 📘 README.md
+├── 📂 conf
+│   ├── 📂 base
+│   └── 📂 local
 │       └──  credentials.yml   # Add your LLM api key here
-├──  data
-│   ├──  01_raw
-│   │   ├──  Co-Star-Prompting.md
-│   │   └──  pddl_domain # the planning tasks for training, validation and testing, including CoT prompt templates 
-│   ├──  02_intermediate
-│   │   ├──  action_schema_combination # the output of the action schema combination pipeline
-│   │   ├──  pddl_domain # training data for finetuning the sentence encoder
-│   │   └──  post_generate_schema_pool # action schema pool after syntax correction
-│   ├──  03_primary
-│   │   └──  cp_threshold # conformal prediction threshold information
-│   ├──  06_models # sentence encoder models checkpoint
-│   │   └──  finetuned_sentence_encoder_batch_256_2024-07-06_20-18-22
-│   ├──  07_model_output
-│   │   ├──  llm_to_domain_to_plans    # generated plans from the LLM
-│   │   ├──  pure_generate_schema_pool # conversation details of LLM-symbolic pipeline
-│   │   └──  tree_of_thought_plans    # conversation details of ToT approach
-│   └──  08_reporting
-│       ├──  action_combi_analysis # action schema combination analysis
-│       ├──  cosine_sim_comparison_after_finetune  # cosine sim comparison after finetuning
-│       ├──  cosine_sim_comparison_of_vanilla_model # cosine sim comparison of vanilla model
-│       └──  human_evaluation_results  # human evaluation results
-├──  job-scripts       # All the reference job scripts to run the pipeline
-│   ├──  job_acquire_plan_and_ranking.sh
-│   ├──  job_action_combination_and_analysis_cp_false.sh
-│   ├──  job_action_combination_and_analysis_cp_true.sh
-│   ├──  job_analyzing_cos_sim_score_for_vanilla_model.sh
-│   ├──  job_conformal_prediction_threshold_cal.sh
-│   ├──  job_finetune_sentence_encoder.sh
-│   ├──  job_finetune_sentence_encoder_smaller.sh
-│   ├──  job_generate_schema_pool.sh
-│   ├──  job_post_finetune_analysis.sh
-│   ├──  job_post_generate_schema_pool_parsing.sh
-│   ├──  job_setup_sentence_encoder.sh
-│   ├──  job_tot_planning.sh
-│   └──  job_tot_planning_test_gpt_on_sussman_anomaly.sh
-├──  opt           # external tool (classical planner) to generate plans
-│   ├──  README.md
-│   └──  planning-as-a-service
-│       └──  README.md
+├── 📂 data
+│   ├── 📂 01_raw
+│   │   ├── 📘 Co-Star-Prompting.md
+│   │   └── 📂 pddl_domain # the planning tasks for training, validation and testing, including CoT prompt templates 
+│   ├── 📂 02_intermediate
+│   │   ├── 📂 action_schema_combination # the output of the action schema combination pipeline
+│   │   ├── 📂 pddl_domain # training data for finetuning the sentence encoder
+│   │   └── 📂 post_generate_schema_pool # action schema pool after syntax correction
+│   ├── 📂 03_primary
+│   │   └── 📂 cp_threshold # conformal prediction threshold information
+│   ├── 📂 06_models # sentence encoder models checkpoint
+│   │   └── 📂 finetuned_sentence_encoder_batch_256_2024-07-06_20-18-22
+│   ├── 📂 07_model_output
+│   │   ├── 📂 llm_to_domain_to_plans    # generated plans from the LLM
+│   │   ├── 📂 pure_generate_schema_pool # conversation details of LLM-symbolic pipeline
+│   │   └── 📂 tree_of_thought_plans    # conversation details of ToT approach
+│   └── 📂 08_reporting
+│       ├── 📂 action_combi_analysis # action schema combination analysis
+│       ├── 📂 cosine_sim_comparison_after_finetune  # cosine sim comparison after finetuning
+│       ├── 📂 cosine_sim_comparison_of_vanilla_model # cosine sim comparison of vanilla model
+│       └── 📂 human_evaluation_results  # human evaluation results
+├── 📂 job-scripts       # All the reference job scripts to run the pipeline
+│   ├── 💻 job_acquire_plan_and_ranking.sh
+│   ├── 💻 job_action_combination_and_analysis_cp_false.sh
+│   ├── 💻 job_action_combination_and_analysis_cp_true.sh
+│   ├── 💻 job_analyzing_cos_sim_score_for_vanilla_model.sh
+│   ├── 💻 job_conformal_prediction_threshold_cal.sh
+│   ├── 💻 job_finetune_sentence_encoder.sh
+│   ├── 💻 job_finetune_sentence_encoder_smaller.sh
+│   ├── 💻 job_generate_schema_pool.sh
+│   ├── 💻 job_post_finetune_analysis.sh
+│   ├── 💻 job_post_generate_schema_pool_parsing.sh
+│   ├── 💻 job_setup_sentence_encoder.sh
+│   ├── 💻 job_tot_planning.sh
+│   └── 💻 job_tot_planning_test_gpt_on_sussman_anomaly.sh
+├── 📂 opt           # external tool (classical planner) to generate plans
+│   ├── 📘 README.md
+│   └── 📂 planning-as-a-service
+│       └── 📘 README.md
 ├──  pyproject.toml
 ├──  requirements.txt
-└──  src
-    └──  better_leveraging_llm_to_construct_world_models
-       └──  pipelines         # All modules of the LLM-symbolic planning pipline
-          ├──  action_schema_combination # get all schema set combinations and obtaining viable action schema sets by using classical planner
-          ├──  bisim_evaluation # deprecated because it require the parameters of actions to be the same as the reference model
-          ├──  compare_cos_sim_between_act_and_nl_desc # calculate the cos. sim. between the action schema and the natural language description
-          ├──  conformal_prediction_filtering    # calculate the conformal prediction threshold based on the validation dataset.
-          ├──  finetuning_sentence_encoder   # finetune the sentence encoder
-          ├──  generate_schema_pool                 # generate action schema pool
-          ├──  plan_evaluation   # human blind evaluation on the plan quality
-          ├──  post_construction_ranking # obtaining ranking score for the plan candidates
-          ├──  post_generate_schema_pool # Validate the syntax of the generated domain models
-          ├──  setup_sentence_encoder    # init the sentence encoder
-          └──  tree_of_thought_direct_planning # ToT approach to generate plans
+└── 📂 src
+    └── 📂 better_leveraging_llm_to_construct_world_models
+       └── 📂 pipelines         # All modules of the LLM-symbolic planning pipline
+          ├── 📂 action_schema_combination # get all schema set combinations and obtaining viable action schema sets by using classical planner
+          ├── 📂 bisim_evaluation # deprecated because it require the parameters of actions to be the same as the reference model
+          ├── 📂 compare_cos_sim_between_act_and_nl_desc # calculate the cos. sim. between the action schema and the natural language description
+          ├── 📂 conformal_prediction_filtering    # calculate the conformal prediction threshold based on the validation dataset.
+          ├── 📂 finetuning_sentence_encoder   # finetune the sentence encoder
+          ├── 📂 generate_schema_pool                 # generate action schema pool
+          ├── 📂 plan_evaluation   # human blind evaluation on the plan quality
+          ├── 📂 post_construction_ranking # obtaining ranking score for the plan candidates
+          ├── 📂 post_generate_schema_pool # Validate the syntax of the generated domain models
+          ├── 📂 setup_sentence_encoder    # init the sentence encoder
+          └── 📂 tree_of_thought_direct_planning # ToT approach to generate plans
 
 ```
 
