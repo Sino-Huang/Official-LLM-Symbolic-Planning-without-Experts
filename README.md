@@ -16,7 +16,7 @@ This repository contains the codebase for the paper **Planning in the Dark: LLM-
 ├── 📂 conf
 │   ├── 📂 base
 │   └── 📂 local
-│       └──  credentials.yml   # Add your LLM api key here
+│       └── 🔍 credentials.yml   # Add your LLM api key here
 ├── 📂 data
 │   ├── 📂 01_raw
 │   │   ├── 📘 Co-Star-Prompting.md
@@ -56,8 +56,8 @@ This repository contains the codebase for the paper **Planning in the Dark: LLM-
 │   ├── 📘 README.md
 │   └── 📂 planning-as-a-service
 │       └── 📘 README.md
-├──  pyproject.toml
-├──  requirements.txt
+├── 📜 pyproject.toml
+├── 📜 requirements.txt
 └── 📂 src
     └── 📂 better_leveraging_llm_to_construct_world_models
        └── 📂 pipelines         # All modules of the LLM-symbolic planning pipline
