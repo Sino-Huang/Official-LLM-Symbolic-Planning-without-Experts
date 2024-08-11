@@ -1,0 +1,10 @@
+[
+    "mix",
+    "remove_pan_from_oven",
+    "bake_cake",
+    "put_flour_in_pan",
+    "clean_pan",
+    "put_egg_in_pan",
+    "bake_souffle",
+    "put_pan_in_oven"
+]

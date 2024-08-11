@@ -1,0 +1,13 @@
+# This is a boilerplate parameters config generated for pipeline 'action_schema_combination'
+# using Kedro 0.19.6.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.6/configuration/parameters.html
+
+action_schema_combination_cfg:
+  use_cp_filtering: ${runtime_params:use_cp, false}
+  cp_alpha_lst: [0.2]
+  use_cp_params:
+    ensemble_size_lst: [7, 10, 15]
+  no_cp_params:
+    ensemble_size_lst: [7, 10]

@@ -1,0 +1,5 @@
+(remove-from-shelf book3 book1)
+(take-from-table book2)
+(place-on-shelf book2 book3)
+(take-from-table book1)
+(place-on-shelf book1 book2)

@@ -1,0 +1,14 @@
+
+Explanation:
+Solve: This term is used to assess whether the planner can find a plan based on the generated domain model.
+St-Validates: This term is used to assess whether the plan generated from the domain model is valid when applied to the actual groundtruth domain setting.
+Ref-Validates: This term is used to evaluate whether the reference solution (groundtruth plan) is valid when applied to the generated domain model.
+Aligns: This term is used to assess the equivalence between two planning domains are “equivalent” using Bisimulation theory.
+
+#
+| Problem                            | Solve   | St-Validates   | Ref-Validates   | Aligns          | Domain-Name   | Desc-Granularity   |
+|------------------------------------|---------|----------------|-----------------|-----------------|---------------|--------------------|
+| libraryworld_submission_0_detailed | ✔       | ✔              | ✔               | ✔               | libraryworld  | detailed           |
+| libraryworld_submission_1_detailed | ✔       | ❌             | ❌              | Diff Parameters | libraryworld  | detailed           |
+| libraryworld_submission_2_detailed | ✔       | ❌             | ❌              | Diff Parameters | libraryworld  | detailed           |
+

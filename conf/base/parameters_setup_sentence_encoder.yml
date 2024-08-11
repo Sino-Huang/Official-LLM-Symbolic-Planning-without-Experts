@@ -1,0 +1,19 @@
+# This is a boilerplate parameters config generated for pipeline 'setup_sentence_encoder'
+# using Kedro 0.19.6.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.6/configuration/parameters.html
+
+setup_sentence_encoder_cfg:
+  # model_name: "cross-encoder/ms-marco-MiniLM-L-12-v2"  # score 2.535696 / 2.4669595
+  # model_name: "cross-encoder/qnli-electra-base"  # 0.9794074 / 0.97818494
+  # model_name: "cross-encoder/quora-roberta-large"  # 0.006643193 / 0.0064399485 
+  # model_name: "sentence-transformers/all-mpnet-base-v2"  # 0.4681 / 0.4567
+  # model_name: "sentence-transformers/sentence-t5-xl"
+  model_name: "sentence-transformers/all-roberta-large-v1"  # 0.3443 / 0.3374
+  model_type: "bi_encoder" # "cross_encoder" or "bi_encoder"
+  activate_alternative_embedding: false
+  alternative_embedding_model: "text-embedding-3-large"
+
+  device: "cuda"
+  is_evaluated: true

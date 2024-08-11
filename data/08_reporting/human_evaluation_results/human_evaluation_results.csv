@@ -1,0 +1,761 @@
+Domain,Problem Desc,Desc Granularity,Plan,Plan Type,Human Rating
+libraryworld,"Problem Object Desc:
+(:objects
+    Book1 Book2 Book3 - book
+    Fiction Non_Fiction Reference - category
+)
+
+
+Problem Init State Desc:
+In the library, there are three books: Book1, Book2, and Book3. Book3 is on top of Book1 and they are both on the shelf, while Book2 and Book1 are on the table. Both Book2 and Book3 are accessible, meaning they can be interacted with. The library worker's hands are free. Book1 belongs to the Fiction category, Book2 belongs to the NonFiction category, and Book3 belongs to the Reference category. All three categories (Fiction, NonFiction, and Reference) have empty shelves.
+
+Problem Goal State Desc:
+The goal is to have Book2 on top of Book3, and also Book1 on top of Book2.
+
+",detailed,"['(remove-from-shelf book3 book1)', '(take-from-table book2)', '(place-on-shelf book2 book3)', '(take-from-table book1)', '(place-on-shelf book1 book2)']",PDDL to Plan,5
+libraryworld,"Problem Object Desc:
+(:objects
+    Book1 Book2 Book3 - book
+    Fiction Non_Fiction Reference - category
+)
+
+
+Problem Init State Desc:
+In the library, there are three books: Book1, Book2, and Book3. Book3 is on top of Book1 and they are both on the shelf, while Book2 and Book1 are on the table. Both Book2 and Book3 are accessible, meaning they can be interacted with. The library worker's hands are free. Book1 belongs to the Fiction category, Book2 belongs to the NonFiction category, and Book3 belongs to the Reference category. All three categories (Fiction, NonFiction, and Reference) have empty shelves.
+
+Problem Goal State Desc:
+The goal is to have Book2 on top of Book3, and also Book1 on top of Book2.
+
+",detailed,"['(remove-from-shelf book3 book1 reference)', '(take-from-table book2)', '(place-on-shelf book2 book3)', '(take-from-table book1)', '(place-on-shelf book1 book2)']",PDDL to Plan,2
+libraryworld,"Problem Object Desc:
+(:objects
+    Book1 Book2 Book3 - book
+    Fiction Non_Fiction Reference - category
+)
+
+
+Problem Init State Desc:
+In the library, there are three books: Book1, Book2, and Book3. Book3 is on top of Book1 and they are both on the shelf, while Book2 and Book1 are on the table. Both Book2 and Book3 are accessible, meaning they can be interacted with. The library worker's hands are free. Book1 belongs to the Fiction category, Book2 belongs to the NonFiction category, and Book3 belongs to the Reference category. All three categories (Fiction, NonFiction, and Reference) have empty shelves.
+
+Problem Goal State Desc:
+The goal is to have Book2 on top of Book3, and also Book1 on top of Book2.
+
+",detailed,"['take-from-table Book2', 'place-on-shelf Book2 Book3', 'take-from-table Book1', 'place-on-shelf Book1 Book2']",Tot Direct Plan,3
+libraryworld,"Problem Object Desc:
+(:objects
+    Book1 Book2 Book3 - book
+    Fiction Non_Fiction Reference - category
+)
+
+
+Problem Init State Desc:
+In the library, there are three books: Book1, Book2, and Book3. Book3 is on top of Book1 and they are both on the shelf, while Book2 and Book1 are on the table. Both Book2 and Book3 are accessible, meaning they can be interacted with. The library worker's hands are free. Book1 belongs to the Fiction category, Book2 belongs to the NonFiction category, and Book3 belongs to the Reference category. All three categories (Fiction, NonFiction, and Reference) have empty shelves.
+
+Problem Goal State Desc:
+The goal is to have Book2 on top of Book3, and also Book1 on top of Book2.
+
+",detailed,"['take-from-table Book2', 'place-on-shelf Book2 Book3', 'take-from-table Book1', 'place-on-shelf Book1 Book2']",Tot Direct Plan,4
+libraryworld,"Problem Object Desc:
+(:objects
+    Book1 Book2 Book3 - book
+    Fiction Non_Fiction Reference - category
+)
+
+
+Problem Init State Desc:
+In the library, there are three books: Book1, Book2, and Book3. Book3 is on top of Book1 and they are both on the shelf, while Book2 and Book1 are on the table. Both Book2 and Book3 are accessible, meaning they can be interacted with. The library worker's hands are free. Book1 belongs to the Fiction category, Book2 belongs to the NonFiction category, and Book3 belongs to the Reference category. All three categories (Fiction, NonFiction, and Reference) have empty shelves.
+
+Problem Goal State Desc:
+The goal is to have Book2 on top of Book3, and also Book1 on top of Book2.
+
+",detailed,"['(remove-from-shelf book3 book1 reference)', '(place-on-table book3)', '(take-from-table book2)', '(place-on-shelf book2 book3 non_fiction)', '(take-from-table book1)', '(place-on-shelf book1 book2 fiction)']_",Gold,1
+libraryworld,"Problem Object Desc:
+(:objects
+    Book1 Book2 Book3 - book
+    Fiction Non_Fiction Reference - category
+)
+
+
+Problem Init State Desc:
+In the library, there are three books: Book1, Book2, and Book3. Book3 is on top of Book1 and they are both on the shelf, while Book2 and Book1 are on the table. Both Book2 and Book3 are accessible, meaning they can be interacted with. The library worker's hands are free. Book1 belongs to the Fiction category, Book2 belongs to the NonFiction category, and Book3 belongs to the Reference category. All three categories (Fiction, NonFiction, and Reference) have empty shelves.
+
+Problem Goal State Desc:
+The goal is to have Book2 on top of Book3, and also Book1 on top of Book2.
+
+",layman,"['take-from-table Book2', 'place-on-shelf Book2', 'take-from-table Book1', 'place-on-shelf Book1']",Tot Direct Plan,4
+libraryworld,"Problem Object Desc:
+(:objects
+    Book1 Book2 Book3 - book
+    Fiction Non_Fiction Reference - category
+)
+
+
+Problem Init State Desc:
+In the library, there are three books: Book1, Book2, and Book3. Book3 is on top of Book1 and they are both on the shelf, while Book2 and Book1 are on the table. Both Book2 and Book3 are accessible, meaning they can be interacted with. The library worker's hands are free. Book1 belongs to the Fiction category, Book2 belongs to the NonFiction category, and Book3 belongs to the Reference category. All three categories (Fiction, NonFiction, and Reference) have empty shelves.
+
+Problem Goal State Desc:
+The goal is to have Book2 on top of Book3, and also Book1 on top of Book2.
+
+",layman,"['(take-from-table book2 reference)', '(place-on-shelf book2 book3)', '(remove-from-shelf book3 book1)', '(take-from-table book1 reference)', '(place-on-shelf book1 book2)']",PDDL to Plan,2
+libraryworld,"Problem Object Desc:
+(:objects
+    Book1 Book2 Book3 - book
+    Fiction Non_Fiction Reference - category
+)
+
+
+Problem Init State Desc:
+In the library, there are three books: Book1, Book2, and Book3. Book3 is on top of Book1 and they are both on the shelf, while Book2 and Book1 are on the table. Both Book2 and Book3 are accessible, meaning they can be interacted with. The library worker's hands are free. Book1 belongs to the Fiction category, Book2 belongs to the NonFiction category, and Book3 belongs to the Reference category. All three categories (Fiction, NonFiction, and Reference) have empty shelves.
+
+Problem Goal State Desc:
+The goal is to have Book2 on top of Book3, and also Book1 on top of Book2.
+
+",layman,"['(take-from-table book2)', '(place-on-shelf book2 book3)', '(remove-from-shelf book3 book1)', '(take-from-table book1)', '(place-on-shelf book1 book2)']",PDDL to Plan,3
+libraryworld,"Problem Object Desc:
+(:objects
+    Book1 Book2 Book3 - book
+    Fiction Non_Fiction Reference - category
+)
+
+
+Problem Init State Desc:
+In the library, there are three books: Book1, Book2, and Book3. Book3 is on top of Book1 and they are both on the shelf, while Book2 and Book1 are on the table. Both Book2 and Book3 are accessible, meaning they can be interacted with. The library worker's hands are free. Book1 belongs to the Fiction category, Book2 belongs to the NonFiction category, and Book3 belongs to the Reference category. All three categories (Fiction, NonFiction, and Reference) have empty shelves.
+
+Problem Goal State Desc:
+The goal is to have Book2 on top of Book3, and also Book1 on top of Book2.
+
+",layman,"['(remove-from-shelf book3 book1 reference)', '(place-on-table book3)', '(take-from-table book2)', '(place-on-shelf book2 book3 non_fiction)', '(take-from-table book1)', '(place-on-shelf book1 book2 fiction)']_",Gold,1
+libraryworld,"Problem Object Desc:
+(:objects
+    Book1 Book2 Book3 - book
+    Fiction Non_Fiction Reference - category
+)
+
+
+Problem Init State Desc:
+In the library, there are three books: Book1, Book2, and Book3. Book3 is on top of Book1 and they are both on the shelf, while Book2 and Book1 are on the table. Both Book2 and Book3 are accessible, meaning they can be interacted with. The library worker's hands are free. Book1 belongs to the Fiction category, Book2 belongs to the NonFiction category, and Book3 belongs to the Reference category. All three categories (Fiction, NonFiction, and Reference) have empty shelves.
+
+Problem Goal State Desc:
+The goal is to have Book2 on top of Book3, and also Book1 on top of Book2.
+
+",layman,"['take-from-table Book2', 'place-on-shelf Book2', 'take-from-table Book1', 'place-on-shelf Book1']",Tot Direct Plan,5
+rpggame,"Problem Object Desc:
+(:objects
+    cell1 cell2 cell3 cell4 cell5 cell6 cell7 cell8 - cells
+    sword1 - swords
+)
+
+
+Problem Init State Desc:
+In the dungeon, the hero starts at cell5, with free hands ready for action. The hero is aware of the dungeon's layout, which consists of multiple interconnected cells. A sword is located in cell4. The dungeon contains dangerous monsters located in cell3 and cell8, and a trap is present in cell2. The hero must navigate this treacherous environment, using the connections between the cells to move around. The connections are as follows:
+
+    Cell1 is connected to cell2.
+    Cell2 is connected to cell1 and cell3.
+    Cell3 is connected to cell2 and cell4.
+    Cell4 is connected to cell3 and cell5.
+    Cell5 is connected to cell4 and cell8.
+    Cell6 is connected to cell7.
+    Cell7 is connected to cell6 and cell8.
+    Cell8 is connected to cell7 and cell5.
+    Cell2 is also connected to cell6.
+    Cell3 is also connected to cell7.
+    Cell4 is also connected to cell8.
+
+
+Problem Goal State Desc:
+The hero's ultimate objective is to reach cell1 safely.
+
+",detailed,"['move (from cell5 to cell4)', 'pick-sword (sword1 in cell4)', 'move (from cell4 to cell3)', 'move (from cell3 to cell2)', 'disarm-trap (in cell2)', 'move (from cell2 to cell1)']",Tot Direct Plan,3
+rpggame,"Problem Object Desc:
+(:objects
+    cell1 cell2 cell3 cell4 cell5 cell6 cell7 cell8 - cells
+    sword1 - swords
+)
+
+
+Problem Init State Desc:
+In the dungeon, the hero starts at cell5, with free hands ready for action. The hero is aware of the dungeon's layout, which consists of multiple interconnected cells. A sword is located in cell4. The dungeon contains dangerous monsters located in cell3 and cell8, and a trap is present in cell2. The hero must navigate this treacherous environment, using the connections between the cells to move around. The connections are as follows:
+
+    Cell1 is connected to cell2.
+    Cell2 is connected to cell1 and cell3.
+    Cell3 is connected to cell2 and cell4.
+    Cell4 is connected to cell3 and cell5.
+    Cell5 is connected to cell4 and cell8.
+    Cell6 is connected to cell7.
+    Cell7 is connected to cell6 and cell8.
+    Cell8 is connected to cell7 and cell5.
+    Cell2 is also connected to cell6.
+    Cell3 is also connected to cell7.
+    Cell4 is also connected to cell8.
+
+
+Problem Goal State Desc:
+The hero's ultimate objective is to reach cell1 safely.
+
+",detailed,"['(move cell5 cell4)', '(pick-sword cell4 sword1)', '(move-to-monster cell4 cell3 sword1)', '(move cell3 cell7)', '(destroy-sword cell7 sword1)', '(move cell7 cell6)', '(move-to-trap cell6 cell2)', '(disarm-trap cell2)', '(move cell2 cell1)']_",Gold,1
+rpggame,"Problem Object Desc:
+(:objects
+    cell1 cell2 cell3 cell4 cell5 cell6 cell7 cell8 - cells
+    sword1 - swords
+)
+
+
+Problem Init State Desc:
+In the dungeon, the hero starts at cell5, with free hands ready for action. The hero is aware of the dungeon's layout, which consists of multiple interconnected cells. A sword is located in cell4. The dungeon contains dangerous monsters located in cell3 and cell8, and a trap is present in cell2. The hero must navigate this treacherous environment, using the connections between the cells to move around. The connections are as follows:
+
+    Cell1 is connected to cell2.
+    Cell2 is connected to cell1 and cell3.
+    Cell3 is connected to cell2 and cell4.
+    Cell4 is connected to cell3 and cell5.
+    Cell5 is connected to cell4 and cell8.
+    Cell6 is connected to cell7.
+    Cell7 is connected to cell6 and cell8.
+    Cell8 is connected to cell7 and cell5.
+    Cell2 is also connected to cell6.
+    Cell3 is also connected to cell7.
+    Cell4 is also connected to cell8.
+
+
+Problem Goal State Desc:
+The hero's ultimate objective is to reach cell1 safely.
+
+",detailed,"['(move cell5 cell4)', '(move-to-monster cell4 cell3)', '(move-to-trap cell3 cell2)', '(move cell2 cell1)']",PDDL to Plan,4
+rpggame,"Problem Object Desc:
+(:objects
+    cell1 cell2 cell3 cell4 cell5 cell6 cell7 cell8 - cells
+    sword1 - swords
+)
+
+
+Problem Init State Desc:
+In the dungeon, the hero starts at cell5, with free hands ready for action. The hero is aware of the dungeon's layout, which consists of multiple interconnected cells. A sword is located in cell4. The dungeon contains dangerous monsters located in cell3 and cell8, and a trap is present in cell2. The hero must navigate this treacherous environment, using the connections between the cells to move around. The connections are as follows:
+
+    Cell1 is connected to cell2.
+    Cell2 is connected to cell1 and cell3.
+    Cell3 is connected to cell2 and cell4.
+    Cell4 is connected to cell3 and cell5.
+    Cell5 is connected to cell4 and cell8.
+    Cell6 is connected to cell7.
+    Cell7 is connected to cell6 and cell8.
+    Cell8 is connected to cell7 and cell5.
+    Cell2 is also connected to cell6.
+    Cell3 is also connected to cell7.
+    Cell4 is also connected to cell8.
+
+
+Problem Goal State Desc:
+The hero's ultimate objective is to reach cell1 safely.
+
+",detailed,"['(move cell5 cell4)', '(move cell4 cell3)', '(move-to-trap cell3 cell2)', '(move cell2 cell1)']",PDDL to Plan,5
+rpggame,"Problem Object Desc:
+(:objects
+    cell1 cell2 cell3 cell4 cell5 cell6 cell7 cell8 - cells
+    sword1 - swords
+)
+
+
+Problem Init State Desc:
+In the dungeon, the hero starts at cell5, with free hands ready for action. The hero is aware of the dungeon's layout, which consists of multiple interconnected cells. A sword is located in cell4. The dungeon contains dangerous monsters located in cell3 and cell8, and a trap is present in cell2. The hero must navigate this treacherous environment, using the connections between the cells to move around. The connections are as follows:
+
+    Cell1 is connected to cell2.
+    Cell2 is connected to cell1 and cell3.
+    Cell3 is connected to cell2 and cell4.
+    Cell4 is connected to cell3 and cell5.
+    Cell5 is connected to cell4 and cell8.
+    Cell6 is connected to cell7.
+    Cell7 is connected to cell6 and cell8.
+    Cell8 is connected to cell7 and cell5.
+    Cell2 is also connected to cell6.
+    Cell3 is also connected to cell7.
+    Cell4 is also connected to cell8.
+
+
+Problem Goal State Desc:
+The hero's ultimate objective is to reach cell1 safely.
+
+",detailed,"['move (from cell5 to cell4)', 'pick-sword (sword1 in cell4)', 'move (from cell4 to cell3)', 'move (from cell3 to cell2)', 'disarm-trap (in cell2)', 'move (from cell2 to cell1)']",Tot Direct Plan,2
+rpggame,"Problem Object Desc:
+(:objects
+    cell1 cell2 cell3 cell4 cell5 cell6 cell7 cell8 - cells
+    sword1 - swords
+)
+
+
+Problem Init State Desc:
+In the dungeon, the hero starts at cell5, with free hands ready for action. The hero is aware of the dungeon's layout, which consists of multiple interconnected cells. A sword is located in cell4. The dungeon contains dangerous monsters located in cell3 and cell8, and a trap is present in cell2. The hero must navigate this treacherous environment, using the connections between the cells to move around. The connections are as follows:
+
+    Cell1 is connected to cell2.
+    Cell2 is connected to cell1 and cell3.
+    Cell3 is connected to cell2 and cell4.
+    Cell4 is connected to cell3 and cell5.
+    Cell5 is connected to cell4 and cell8.
+    Cell6 is connected to cell7.
+    Cell7 is connected to cell6 and cell8.
+    Cell8 is connected to cell7 and cell5.
+    Cell2 is also connected to cell6.
+    Cell3 is also connected to cell7.
+    Cell4 is also connected to cell8.
+
+
+Problem Goal State Desc:
+The hero's ultimate objective is to reach cell1 safely.
+
+",layman,"['move-to-sword', 'pick-sword', 'move-to-trap', 'disarm-trap', 'move', 'move']",Tot Direct Plan,3
+rpggame,"Problem Object Desc:
+(:objects
+    cell1 cell2 cell3 cell4 cell5 cell6 cell7 cell8 - cells
+    sword1 - swords
+)
+
+
+Problem Init State Desc:
+In the dungeon, the hero starts at cell5, with free hands ready for action. The hero is aware of the dungeon's layout, which consists of multiple interconnected cells. A sword is located in cell4. The dungeon contains dangerous monsters located in cell3 and cell8, and a trap is present in cell2. The hero must navigate this treacherous environment, using the connections between the cells to move around. The connections are as follows:
+
+    Cell1 is connected to cell2.
+    Cell2 is connected to cell1 and cell3.
+    Cell3 is connected to cell2 and cell4.
+    Cell4 is connected to cell3 and cell5.
+    Cell5 is connected to cell4 and cell8.
+    Cell6 is connected to cell7.
+    Cell7 is connected to cell6 and cell8.
+    Cell8 is connected to cell7 and cell5.
+    Cell2 is also connected to cell6.
+    Cell3 is also connected to cell7.
+    Cell4 is also connected to cell8.
+
+
+Problem Goal State Desc:
+The hero's ultimate objective is to reach cell1 safely.
+
+",layman,"['(move cell5 cell4)', '(move-to-monster cell4 cell3)', '(move-to-trap cell3 cell2)', '(disarm-trap cell2)', '(move cell2 cell1)']",PDDL to Plan,5
+rpggame,"Problem Object Desc:
+(:objects
+    cell1 cell2 cell3 cell4 cell5 cell6 cell7 cell8 - cells
+    sword1 - swords
+)
+
+
+Problem Init State Desc:
+In the dungeon, the hero starts at cell5, with free hands ready for action. The hero is aware of the dungeon's layout, which consists of multiple interconnected cells. A sword is located in cell4. The dungeon contains dangerous monsters located in cell3 and cell8, and a trap is present in cell2. The hero must navigate this treacherous environment, using the connections between the cells to move around. The connections are as follows:
+
+    Cell1 is connected to cell2.
+    Cell2 is connected to cell1 and cell3.
+    Cell3 is connected to cell2 and cell4.
+    Cell4 is connected to cell3 and cell5.
+    Cell5 is connected to cell4 and cell8.
+    Cell6 is connected to cell7.
+    Cell7 is connected to cell6 and cell8.
+    Cell8 is connected to cell7 and cell5.
+    Cell2 is also connected to cell6.
+    Cell3 is also connected to cell7.
+    Cell4 is also connected to cell8.
+
+
+Problem Goal State Desc:
+The hero's ultimate objective is to reach cell1 safely.
+
+",layman,"['(move cell5 cell4)', '(pick-sword cell4 sword1)', '(move-to-monster cell4 cell3 sword1)', '(move cell3 cell7)', '(destroy-sword cell7 sword1)', '(move cell7 cell6)', '(move-to-trap cell6 cell2)', '(disarm-trap cell2)', '(move cell2 cell1)']_",Gold,1
+rpggame,"Problem Object Desc:
+(:objects
+    cell1 cell2 cell3 cell4 cell5 cell6 cell7 cell8 - cells
+    sword1 - swords
+)
+
+
+Problem Init State Desc:
+In the dungeon, the hero starts at cell5, with free hands ready for action. The hero is aware of the dungeon's layout, which consists of multiple interconnected cells. A sword is located in cell4. The dungeon contains dangerous monsters located in cell3 and cell8, and a trap is present in cell2. The hero must navigate this treacherous environment, using the connections between the cells to move around. The connections are as follows:
+
+    Cell1 is connected to cell2.
+    Cell2 is connected to cell1 and cell3.
+    Cell3 is connected to cell2 and cell4.
+    Cell4 is connected to cell3 and cell5.
+    Cell5 is connected to cell4 and cell8.
+    Cell6 is connected to cell7.
+    Cell7 is connected to cell6 and cell8.
+    Cell8 is connected to cell7 and cell5.
+    Cell2 is also connected to cell6.
+    Cell3 is also connected to cell7.
+    Cell4 is also connected to cell8.
+
+
+Problem Goal State Desc:
+The hero's ultimate objective is to reach cell1 safely.
+
+",layman,"['(move cell5 cell4)', '(move-to-monster cell4 cell3)', '(move-to-trap cell3 cell2)', '(disarm-trap cell2)', '(move cell2 cell1)']",PDDL to Plan,2
+rpggame,"Problem Object Desc:
+(:objects
+    cell1 cell2 cell3 cell4 cell5 cell6 cell7 cell8 - cells
+    sword1 - swords
+)
+
+
+Problem Init State Desc:
+In the dungeon, the hero starts at cell5, with free hands ready for action. The hero is aware of the dungeon's layout, which consists of multiple interconnected cells. A sword is located in cell4. The dungeon contains dangerous monsters located in cell3 and cell8, and a trap is present in cell2. The hero must navigate this treacherous environment, using the connections between the cells to move around. The connections are as follows:
+
+    Cell1 is connected to cell2.
+    Cell2 is connected to cell1 and cell3.
+    Cell3 is connected to cell2 and cell4.
+    Cell4 is connected to cell3 and cell5.
+    Cell5 is connected to cell4 and cell8.
+    Cell6 is connected to cell7.
+    Cell7 is connected to cell6 and cell8.
+    Cell8 is connected to cell7 and cell5.
+    Cell2 is also connected to cell6.
+    Cell3 is also connected to cell7.
+    Cell4 is also connected to cell8.
+
+
+Problem Goal State Desc:
+The hero's ultimate objective is to reach cell1 safely.
+
+",layman,"['move-to-sword', 'pick-sword', 'move-to-trap', 'disarm-trap', 'move', 'move']",Tot Direct Plan,4
+minecraft,"Problem Object Desc:
+(:objects
+    grass-0 - moveable
+    grass-1 - moveable
+    log-2 - moveable
+    new-0 - moveable
+    new-1 - moveable
+    new-2 - moveable
+    agent - agent
+    loc-0-0 - static
+    loc-0-1 - static
+    loc-0-2 - static
+    loc-0-3 - static
+    loc-1-0 - static
+    loc-1-1 - static
+    loc-1-2 - static
+    loc-1-3 - static
+    loc-2-0 - static
+    loc-2-1 - static
+    loc-2-2 - static
+    loc-2-3 - static
+    loc-3-0 - static
+    loc-3-1 - static
+    loc-3-2 - static
+    loc-3-3 - static
+)
+
+
+Problem Init State Desc:
+In the Minecraft world, there are several moveable objects: grass-0, grass-1, log-2, new-0, new-1, and new-2. The agent is positioned at location loc-0-2 and currently has free hands. The hypothetical objects new-0, new-1, and new-2 exist but are not yet tangible in the environment. Grass-0 is located at loc-2-2, grass-1 is at loc-0-0, and log-2 is at loc-3-0. The agent can interact with these objects and move between various static locations, which include loc-0-0 through loc-3-3.
+
+Problem Goal State Desc:
+The objective is for the agent to be positioned at location loc-1-1 and to have grass-1 in its inventory.
+
+",detailed,"['(move loc-0-0 loc-0-2)', '(pick grass-1 loc-0-0)', '(move loc-1-1 loc-0-0)']_",Gold,1
+minecraft,"Problem Object Desc:
+(:objects
+    grass-0 - moveable
+    grass-1 - moveable
+    log-2 - moveable
+    new-0 - moveable
+    new-1 - moveable
+    new-2 - moveable
+    agent - agent
+    loc-0-0 - static
+    loc-0-1 - static
+    loc-0-2 - static
+    loc-0-3 - static
+    loc-1-0 - static
+    loc-1-1 - static
+    loc-1-2 - static
+    loc-1-3 - static
+    loc-2-0 - static
+    loc-2-1 - static
+    loc-2-2 - static
+    loc-2-3 - static
+    loc-3-0 - static
+    loc-3-1 - static
+    loc-3-2 - static
+    loc-3-3 - static
+)
+
+
+Problem Init State Desc:
+In the Minecraft world, there are several moveable objects: grass-0, grass-1, log-2, new-0, new-1, and new-2. The agent is positioned at location loc-0-2 and currently has free hands. The hypothetical objects new-0, new-1, and new-2 exist but are not yet tangible in the environment. Grass-0 is located at loc-2-2, grass-1 is at loc-0-0, and log-2 is at loc-3-0. The agent can interact with these objects and move between various static locations, which include loc-0-0 through loc-3-3.
+
+Problem Goal State Desc:
+The objective is for the agent to be positioned at location loc-1-1 and to have grass-1 in its inventory.
+
+",detailed,"['move from loc-0-2 to loc-1-1', 'pick grass-1 at loc-1-1']",Tot Direct Plan,5
+minecraft,"Problem Object Desc:
+(:objects
+    grass-0 - moveable
+    grass-1 - moveable
+    log-2 - moveable
+    new-0 - moveable
+    new-1 - moveable
+    new-2 - moveable
+    agent - agent
+    loc-0-0 - static
+    loc-0-1 - static
+    loc-0-2 - static
+    loc-0-3 - static
+    loc-1-0 - static
+    loc-1-1 - static
+    loc-1-2 - static
+    loc-1-3 - static
+    loc-2-0 - static
+    loc-2-1 - static
+    loc-2-2 - static
+    loc-2-3 - static
+    loc-3-0 - static
+    loc-3-1 - static
+    loc-3-2 - static
+    loc-3-3 - static
+)
+
+
+Problem Init State Desc:
+In the Minecraft world, there are several moveable objects: grass-0, grass-1, log-2, new-0, new-1, and new-2. The agent is positioned at location loc-0-2 and currently has free hands. The hypothetical objects new-0, new-1, and new-2 exist but are not yet tangible in the environment. Grass-0 is located at loc-2-2, grass-1 is at loc-0-0, and log-2 is at loc-3-0. The agent can interact with these objects and move between various static locations, which include loc-0-0 through loc-3-3.
+
+Problem Goal State Desc:
+The objective is for the agent to be positioned at location loc-1-1 and to have grass-1 in its inventory.
+
+",detailed,"['(move loc-0-2 loc-0-0)', '(pick grass-1 loc-0-0)', '(move loc-0-0 loc-1-1)']",PDDL to Plan,2
+minecraft,"Problem Object Desc:
+(:objects
+    grass-0 - moveable
+    grass-1 - moveable
+    log-2 - moveable
+    new-0 - moveable
+    new-1 - moveable
+    new-2 - moveable
+    agent - agent
+    loc-0-0 - static
+    loc-0-1 - static
+    loc-0-2 - static
+    loc-0-3 - static
+    loc-1-0 - static
+    loc-1-1 - static
+    loc-1-2 - static
+    loc-1-3 - static
+    loc-2-0 - static
+    loc-2-1 - static
+    loc-2-2 - static
+    loc-2-3 - static
+    loc-3-0 - static
+    loc-3-1 - static
+    loc-3-2 - static
+    loc-3-3 - static
+)
+
+
+Problem Init State Desc:
+In the Minecraft world, there are several moveable objects: grass-0, grass-1, log-2, new-0, new-1, and new-2. The agent is positioned at location loc-0-2 and currently has free hands. The hypothetical objects new-0, new-1, and new-2 exist but are not yet tangible in the environment. Grass-0 is located at loc-2-2, grass-1 is at loc-0-0, and log-2 is at loc-3-0. The agent can interact with these objects and move between various static locations, which include loc-0-0 through loc-3-3.
+
+Problem Goal State Desc:
+The objective is for the agent to be positioned at location loc-1-1 and to have grass-1 in its inventory.
+
+",detailed,"['(move loc-0-2 loc-0-0)', '(pick grass-1 loc-0-0 agent)', '(move loc-0-0 loc-1-1)']",PDDL to Plan,3
+minecraft,"Problem Object Desc:
+(:objects
+    grass-0 - moveable
+    grass-1 - moveable
+    log-2 - moveable
+    new-0 - moveable
+    new-1 - moveable
+    new-2 - moveable
+    agent - agent
+    loc-0-0 - static
+    loc-0-1 - static
+    loc-0-2 - static
+    loc-0-3 - static
+    loc-1-0 - static
+    loc-1-1 - static
+    loc-1-2 - static
+    loc-1-3 - static
+    loc-2-0 - static
+    loc-2-1 - static
+    loc-2-2 - static
+    loc-2-3 - static
+    loc-3-0 - static
+    loc-3-1 - static
+    loc-3-2 - static
+    loc-3-3 - static
+)
+
+
+Problem Init State Desc:
+In the Minecraft world, there are several moveable objects: grass-0, grass-1, log-2, new-0, new-1, and new-2. The agent is positioned at location loc-0-2 and currently has free hands. The hypothetical objects new-0, new-1, and new-2 exist but are not yet tangible in the environment. Grass-0 is located at loc-2-2, grass-1 is at loc-0-0, and log-2 is at loc-3-0. The agent can interact with these objects and move between various static locations, which include loc-0-0 through loc-3-3.
+
+Problem Goal State Desc:
+The objective is for the agent to be positioned at location loc-1-1 and to have grass-1 in its inventory.
+
+",detailed,"['move from loc-0-2 to loc-1-1', 'pick grass-1 from loc-1-1']",Tot Direct Plan,4
+minecraft,"Problem Object Desc:
+(:objects
+    grass-0 - moveable
+    grass-1 - moveable
+    log-2 - moveable
+    new-0 - moveable
+    new-1 - moveable
+    new-2 - moveable
+    agent - agent
+    loc-0-0 - static
+    loc-0-1 - static
+    loc-0-2 - static
+    loc-0-3 - static
+    loc-1-0 - static
+    loc-1-1 - static
+    loc-1-2 - static
+    loc-1-3 - static
+    loc-2-0 - static
+    loc-2-1 - static
+    loc-2-2 - static
+    loc-2-3 - static
+    loc-3-0 - static
+    loc-3-1 - static
+    loc-3-2 - static
+    loc-3-3 - static
+)
+
+
+Problem Init State Desc:
+In the Minecraft world, there are several moveable objects: grass-0, grass-1, log-2, new-0, new-1, and new-2. The agent is positioned at location loc-0-2 and currently has free hands. The hypothetical objects new-0, new-1, and new-2 exist but are not yet tangible in the environment. Grass-0 is located at loc-2-2, grass-1 is at loc-0-0, and log-2 is at loc-3-0. The agent can interact with these objects and move between various static locations, which include loc-0-0 through loc-3-3.
+
+Problem Goal State Desc:
+The objective is for the agent to be positioned at location loc-1-1 and to have grass-1 in its inventory.
+
+",layman,"['pick grass-1 at loc-0-0', 'move from loc-0-0 to loc-1-1']",Tot Direct Plan,4
+minecraft,"Problem Object Desc:
+(:objects
+    grass-0 - moveable
+    grass-1 - moveable
+    log-2 - moveable
+    new-0 - moveable
+    new-1 - moveable
+    new-2 - moveable
+    agent - agent
+    loc-0-0 - static
+    loc-0-1 - static
+    loc-0-2 - static
+    loc-0-3 - static
+    loc-1-0 - static
+    loc-1-1 - static
+    loc-1-2 - static
+    loc-1-3 - static
+    loc-2-0 - static
+    loc-2-1 - static
+    loc-2-2 - static
+    loc-2-3 - static
+    loc-3-0 - static
+    loc-3-1 - static
+    loc-3-2 - static
+    loc-3-3 - static
+)
+
+
+Problem Init State Desc:
+In the Minecraft world, there are several moveable objects: grass-0, grass-1, log-2, new-0, new-1, and new-2. The agent is positioned at location loc-0-2 and currently has free hands. The hypothetical objects new-0, new-1, and new-2 exist but are not yet tangible in the environment. Grass-0 is located at loc-2-2, grass-1 is at loc-0-0, and log-2 is at loc-3-0. The agent can interact with these objects and move between various static locations, which include loc-0-0 through loc-3-3.
+
+Problem Goal State Desc:
+The objective is for the agent to be positioned at location loc-1-1 and to have grass-1 in its inventory.
+
+",layman,"['(move loc-0-0 loc-0-2)', '(pick grass-1 loc-0-0)', '(move loc-1-1 loc-0-0)']",PDDL to Plan,3
+minecraft,"Problem Object Desc:
+(:objects
+    grass-0 - moveable
+    grass-1 - moveable
+    log-2 - moveable
+    new-0 - moveable
+    new-1 - moveable
+    new-2 - moveable
+    agent - agent
+    loc-0-0 - static
+    loc-0-1 - static
+    loc-0-2 - static
+    loc-0-3 - static
+    loc-1-0 - static
+    loc-1-1 - static
+    loc-1-2 - static
+    loc-1-3 - static
+    loc-2-0 - static
+    loc-2-1 - static
+    loc-2-2 - static
+    loc-2-3 - static
+    loc-3-0 - static
+    loc-3-1 - static
+    loc-3-2 - static
+    loc-3-3 - static
+)
+
+
+Problem Init State Desc:
+In the Minecraft world, there are several moveable objects: grass-0, grass-1, log-2, new-0, new-1, and new-2. The agent is positioned at location loc-0-2 and currently has free hands. The hypothetical objects new-0, new-1, and new-2 exist but are not yet tangible in the environment. Grass-0 is located at loc-2-2, grass-1 is at loc-0-0, and log-2 is at loc-3-0. The agent can interact with these objects and move between various static locations, which include loc-0-0 through loc-3-3.
+
+Problem Goal State Desc:
+The objective is for the agent to be positioned at location loc-1-1 and to have grass-1 in its inventory.
+
+",layman,"['pick grass-1 at loc-0-0', 'move from loc-0-0 to loc-1-1']",Tot Direct Plan,5
+minecraft,"Problem Object Desc:
+(:objects
+    grass-0 - moveable
+    grass-1 - moveable
+    log-2 - moveable
+    new-0 - moveable
+    new-1 - moveable
+    new-2 - moveable
+    agent - agent
+    loc-0-0 - static
+    loc-0-1 - static
+    loc-0-2 - static
+    loc-0-3 - static
+    loc-1-0 - static
+    loc-1-1 - static
+    loc-1-2 - static
+    loc-1-3 - static
+    loc-2-0 - static
+    loc-2-1 - static
+    loc-2-2 - static
+    loc-2-3 - static
+    loc-3-0 - static
+    loc-3-1 - static
+    loc-3-2 - static
+    loc-3-3 - static
+)
+
+
+Problem Init State Desc:
+In the Minecraft world, there are several moveable objects: grass-0, grass-1, log-2, new-0, new-1, and new-2. The agent is positioned at location loc-0-2 and currently has free hands. The hypothetical objects new-0, new-1, and new-2 exist but are not yet tangible in the environment. Grass-0 is located at loc-2-2, grass-1 is at loc-0-0, and log-2 is at loc-3-0. The agent can interact with these objects and move between various static locations, which include loc-0-0 through loc-3-3.
+
+Problem Goal State Desc:
+The objective is for the agent to be positioned at location loc-1-1 and to have grass-1 in its inventory.
+
+",layman,"['(move loc-0-2 loc-0-0)', '(recall grass-1 loc-0-0)', '(move loc-0-0 loc-1-1)']",PDDL to Plan,1
+minecraft,"Problem Object Desc:
+(:objects
+    grass-0 - moveable
+    grass-1 - moveable
+    log-2 - moveable
+    new-0 - moveable
+    new-1 - moveable
+    new-2 - moveable
+    agent - agent
+    loc-0-0 - static
+    loc-0-1 - static
+    loc-0-2 - static
+    loc-0-3 - static
+    loc-1-0 - static
+    loc-1-1 - static
+    loc-1-2 - static
+    loc-1-3 - static
+    loc-2-0 - static
+    loc-2-1 - static
+    loc-2-2 - static
+    loc-2-3 - static
+    loc-3-0 - static
+    loc-3-1 - static
+    loc-3-2 - static
+    loc-3-3 - static
+)
+
+
+Problem Init State Desc:
+In the Minecraft world, there are several moveable objects: grass-0, grass-1, log-2, new-0, new-1, and new-2. The agent is positioned at location loc-0-2 and currently has free hands. The hypothetical objects new-0, new-1, and new-2 exist but are not yet tangible in the environment. Grass-0 is located at loc-2-2, grass-1 is at loc-0-0, and log-2 is at loc-3-0. The agent can interact with these objects and move between various static locations, which include loc-0-0 through loc-3-3.
+
+Problem Goal State Desc:
+The objective is for the agent to be positioned at location loc-1-1 and to have grass-1 in its inventory.
+
+",layman,"['(move loc-0-0 loc-0-2)', '(pick grass-1 loc-0-0)', '(move loc-1-1 loc-0-0)']_",Gold,2

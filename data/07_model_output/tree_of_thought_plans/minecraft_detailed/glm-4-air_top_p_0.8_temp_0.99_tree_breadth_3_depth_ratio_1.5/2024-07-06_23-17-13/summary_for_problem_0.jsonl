@@ -1,0 +1,13 @@
+{"plan": ["move from loc-0-2 to loc-1-1", "pick grass-1 from loc-1-1"], "heuristic": 9.5}
+{"plan": ["move from loc-0-2 to loc-1-1", "pick grass-1 at loc-1-1"], "heuristic": 9.0}
+{"plan": ["move agent from loc-0-2 to loc-1-1", "pick grass-1 at loc-0-0", "check inventory for grass-1"], "heuristic": 9.0}
+{"plan": ["move agent from loc-0-2 to loc-1-1", "pick grass-1 at loc-0-0", "check inventory for grass-1"], "heuristic": 9.0}
+{"plan": ["move from loc-0-2 to loc-1-1", "pick grass-1 at loc-1-1", "inventory grass-1"], "heuristic": 9.0}
+{"plan": ["move from loc-0-2 to loc-1-1", "pick grass-1 at loc-1-1", "check inventory for grass-1"], "heuristic": 9.0}
+{"plan": ["move from loc-0-2 to loc-1-1", "pick grass-1 at loc-1-1", "inventory grass-1"], "heuristic": 9.0}
+{"plan": ["move agent from loc-0-2 to loc-1-1", "pick grass-1 at loc-0-0", "move agent from loc-1-1 to loc-0-0", "pick grass-1 at loc-0-0"], "heuristic": 9.0}
+{"plan": ["move agent from loc-0-2 to loc-1-1", "pick grass-1 at loc-0-0", "move agent from loc-1-1 to loc-0-0", "pick grass-1 at loc-0-0"], "heuristic": 9.0}
+{"plan": ["move agent from loc-0-2 to loc-1-1", "pick grass-1 at loc-0-0", "move agent from loc-1-1 to loc-0-0", "inventory grass-1 into agent"], "heuristic": 9.0}
+{"plan": ["move agent from loc-0-2 to loc-1-1", "pick grass-1 from loc-0-0", "move agent from loc-1-1 to loc-0-2 (corrective action)", "move agent from loc-0-2 to loc-1-1 (corrective action to reach the final goal)"], "heuristic": 8.0}
+{"plan": ["move agent from loc-0-2 to loc-1-1", "pick grass-1 from loc-0-0", "move agent from loc-1-1 to loc-0-2 (corrective action)", "move agent from loc-0-2 to loc-1-1 (corrective action)"], "heuristic": 8.0}
+{"plan": ["move agent from loc-0-2 to loc-1-1", "pick grass-1 from loc-0-0", "move agent from loc-1-1 to loc-0-2", "move agent from loc-0-2 to loc-0-0"], "heuristic": 6.0}

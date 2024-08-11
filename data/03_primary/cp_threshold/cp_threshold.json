@@ -1,0 +1,20 @@
+[
+  {
+    "threshold_val": 0.2799050211906433,
+    "alpha": 0.1,
+    "model_name": "sentence-transformers/all-roberta-large-v1",
+    "checkpoint_tag": "finetuned_sentence_encoder_batch_256_2024-07-06_20-18-22"
+  },
+  {
+    "threshold_val": 0.3988889455795288,
+    "alpha": 0.2,
+    "model_name": "sentence-transformers/all-roberta-large-v1",
+    "checkpoint_tag": "finetuned_sentence_encoder_batch_256_2024-07-06_20-18-22"
+  },
+  {
+    "threshold_val": 0.4686078429222107,
+    "alpha": 0.3,
+    "model_name": "sentence-transformers/all-roberta-large-v1",
+    "checkpoint_tag": "finetuned_sentence_encoder_batch_256_2024-07-06_20-18-22"
+  }
+]

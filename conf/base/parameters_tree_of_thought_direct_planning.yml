@@ -1,0 +1,14 @@
+# This is a boilerplate parameters config generated for pipeline 'tree_of_thought_direct_planning'
+# using Kedro 0.19.6.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.6/configuration/parameters.html
+
+tot_direct_planning_cfg:
+  model_name: "glm-4-air" # "gpt-4o-2024-05-13" | "glm-4-air" 
+  model_type: "zhipuai" # zhipuai | openai, we only support zhipuai, openai has knowledge leak issue
+  top_p: 0.80
+  temperature: 0.99
+  max_tokens: 1024 
+  tree_breadth: 3
+  tree_depth_ratio: 1.5 # tree depth = tree_depth_ratio * groundtruth plan length

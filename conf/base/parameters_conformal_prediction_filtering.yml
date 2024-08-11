@@ -1,0 +1,7 @@
+# This is a boilerplate parameters config generated for pipeline 'conformal_prediction_filtering'
+# using Kedro 0.19.6.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.6/configuration/parameters.html
+conformal_prediction_filtering_cfg:
+  alpha: 0.1 # error rate

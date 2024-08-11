@@ -1,0 +1,6 @@
+general:
+  query_domain: "libraryworld" #  libraryworld | minecraft | rpggame
+  desc_granularity: "detailed" # "detailed" or "layman" 
+  if_cot_in_fewshot: true # true | false, whether we provide CoT content in few-shot examples 
+
+  seed: 1000

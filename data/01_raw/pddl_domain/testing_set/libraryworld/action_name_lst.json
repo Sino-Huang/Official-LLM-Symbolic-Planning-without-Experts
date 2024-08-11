@@ -1,0 +1,8 @@
+[
+    "take-from-table",
+    "place-on-table",
+    "place-on-shelf",
+    "remove-from-shelf",
+    "check-out",
+    "return-book"
+]

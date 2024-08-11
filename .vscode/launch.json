@@ -1,0 +1,100 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Kedro Run Cross Encoder Setup",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "module": "kedro",
+            "args": ["run", "-p", "setup_sentence_encoder"]
+            // Any other arguments should be passed as a comma-seperated-list
+            // e.g "args": ["run", "--pipeline", "pipeline_name"]
+        },
+        {
+            "name": "Python: Kedro Run Analyze Cosine Sim",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "module": "kedro",
+            "args": ["run", "--from-nodes=init_cross_encoder_model_node", "--to-nodes=generate_boxplot_from_cos_sim_data_node",
+            "--params", "setup_sentence_encoder_cfg.model_type=bi_encoder"]
+        },
+        {
+            "name": "Python: Kedro Run FineTune Sentence Encoder",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "module": "kedro",
+            "args": ["run", "-p", "finetuning_sentence_encoder"]
+        },
+
+        {
+            "name": "Python: Kedro Run FineTune Google T5",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "module": "kedro",
+            "args": ["run", "-p", "finetuning_sentence_encoder", "--params", "finetuning_encoder_cfg.train_batch_size=16,setup_sentence_encoder_cfg.model_name=google/flan-t5-xl,setup_sentence_encoder_cfg.model_type=bi_encoder,finetuning_encoder_cfg.is_finetune_complete=false,finetuning_encoder_cfg.train_batch_size=1024"]
+        },
+        {
+            "name": "Python: Kedro Run LLM Query Ensemble",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "module": "kedro",
+            "args": ["run", "-p", "generate_schema_pool"]
+        },
+        {
+            "name": "Python: Kedro Run ToT Planning",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "module": "kedro",
+            "args": ["run", "-p", "tree_of_thought_direct_planning", "--params", "tot_direct_planning_cfg.tree_breadth=4"]
+        },
+        {
+            "name": "Python: Kedro Run Post Majority Vote Parsing",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "module": "kedro",
+            "args": ["run", "-p", "post_generate_schema_pool"]
+        },
+        {
+            "name": "Python: Kedro Run CP calculation",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "module": "kedro",
+            "args": ["run", "-p", "conformal_prediction_filtering"]
+        },
+        {
+            "name": "Python: Kedro action combination",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "module": "kedro",
+            "args": ["run", "-p", "action_schema_combination", "--params", "use_cp=false"]
+        },
+        {
+            "name": "Python: Kedro Post Construction Ranking",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "module": "kedro",
+            "args": ["run", "-p", "post_construction_ranking"]
+        },
+        {
+            "name": "Python: Kedro Human Evaluation",
+            "type": "debugpy",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "module": "kedro",
+            "args": ["run", "-p", "plan_evaluation"]
+        },
+    ]
+}

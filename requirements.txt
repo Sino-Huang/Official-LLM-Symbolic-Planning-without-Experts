@@ -1,0 +1,54 @@
+ipython>=8.10
+jupyterlab>=3.0
+kedro~=0.19.6
+kedro-datasets>=3.0; python_version >= "3.9"
+kedro-datasets>=1.0; python_version < "3.9"
+kedro-telemetry>=0.3.1
+kedro-viz>=6.7.0
+notebook
+pytest~=7.2
+pytest-cov~=3.0
+pytest-mock>=1.7.1, <2.0
+
+# PDDL requirements
+pddl 
+# planutils @ https://github.com/AI-Planning/planutils/archive/refs/tags/v0.10.11.zip
+# pddl-parser @ git+https://github.com/pucrs-automated-planning/pddl-parser.git 
+
+tabulate
+
+# logging
+wandb
+icecream
+
+
+# LLM
+langchain[llm]~=0.2.6
+langchain_core~=0.2.10
+langchain_community~=0.2.6
+zhipuai~=2.1.2
+openai~=1.35.10
+
+# Sentence Transformers
+# sentence-transformers
+sentence-transformers @ git+https://github.com/tomaarsen/sentence-transformers.git@feat/streaming_datasets
+
+torch
+datasets~=2.20.0
+transformers[torch]
+
+# Utils 
+tqdm
+ipywidgets
+jupyterlab
+pandas
+einops
+matplotlib
+scikit-learn
+scipy
+seaborn
+natsort
+jsonlines
+
+# tarski @ git+https://github.com/aig-upf/tarski.git
+# need to manually --force to install tarski after all other requirements

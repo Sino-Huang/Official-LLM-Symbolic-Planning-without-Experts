@@ -1,0 +1,13 @@
+Domain Name,Desc Granularity,Ensemble Size,Total Combinations,Valid Combinations,Applied CP Threshold,CP Threshold Value
+libraryworld,detailed,7,18144,0,False,
+libraryworld,detailed,10,86400,4560,False,
+libraryworld,layman,7,26460,0,False,
+libraryworld,layman,10,124416,17976,False,
+rpggame,detailed,7,600,600,False,
+rpggame,detailed,10,2800,2099,False,
+rpggame,layman,7,360,180,False,
+rpggame,layman,10,700,140,False,
+minecraft,detailed,7,1323,216,False,
+minecraft,detailed,10,5250,3598,False,
+minecraft,layman,7,7350,2800,False,
+minecraft,layman,10,21600,6000,False,

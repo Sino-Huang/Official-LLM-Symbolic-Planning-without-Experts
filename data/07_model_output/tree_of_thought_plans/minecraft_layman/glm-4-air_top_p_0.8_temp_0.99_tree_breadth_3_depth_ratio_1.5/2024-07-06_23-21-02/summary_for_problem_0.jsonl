@@ -1,0 +1,9 @@
+{"plan": ["pick grass-1 at loc-0-0", "move from loc-0-0 to loc-1-1"], "heuristic": 9.0}
+{"plan": ["pick grass-1 at loc-0-0", "move from loc-0-0 to loc-1-1"], "heuristic": 9.0}
+{"plan": ["pick grass-1 at loc-0-0", "move from loc-0-0 to loc-1-1"], "heuristic": 9.0}
+{"plan": ["move from loc-0-2 to loc-1-1", "pick grass-1 at loc-0-0", "pick grass-1 at loc-0-0", "inventory grass-1"], "heuristic": 9.0}
+{"plan": ["move from loc-0-2 to loc-1-1", "pick grass-1 at loc-0-0", "pick grass-1 at loc-0-0", "inventory grass-1"], "heuristic": 9.0}
+{"plan": ["move from loc-0-2 to loc-1-1", "pick grass-1 from loc-0-0", "move from loc-0-0 to loc-1-1"], "heuristic": 8.67}
+{"plan": ["move from loc-0-2 to loc-1-1", "pick grass-1 from loc-0-0", "move from loc-0-0 to loc-1-1"], "heuristic": 8.67}
+{"plan": ["move from loc-0-2 to loc-1-1", "pick grass-1 from loc-0-0", "move from loc-0-0 to loc-1-1"], "heuristic": 8.67}
+{"plan": ["move from loc-0-2 to loc-1-1", "pick grass-1 at loc-0-0"], "heuristic": 8.5}

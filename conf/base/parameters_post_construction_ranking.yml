@@ -1,0 +1,10 @@
+# This is a boilerplate parameters config generated for pipeline 'post_construction_ranking'
+# using Kedro 0.19.6.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.6/configuration/parameters.html
+
+post_construction_ranking_cfg:
+  # solver_url: http://192.168.20.129:5001/package/dual-bfws-ffparser/solve  # URL of the solver
+  heuristic_type: mean  # Type of heuristic to use for ranking
+  

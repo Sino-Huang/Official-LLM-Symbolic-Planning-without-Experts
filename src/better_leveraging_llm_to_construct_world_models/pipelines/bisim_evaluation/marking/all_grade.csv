@@ -1,0 +1,7 @@
+,libraryworld_submission_0_detailed,libraryworld_submission_1_detailed,libraryworld_submission_2_detailed
+solve,✔,✔,✔
+validates1,✔,❌,❌
+validates2,✔,❌,❌
+aligns,✔,Diff Parameters,Diff Parameters
+Domain-Name,libraryworld,libraryworld,libraryworld
+Desc-Granularity,detailed,detailed,detailed

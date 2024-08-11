@@ -1,0 +1,35 @@
+(define (domain rpggame)
+    (:requirements :negative-preconditions :strips :typing)
+    (:types cells swords)
+    (:predicates (arm-free) (at-hero ?loc - cells)  (at-sword ?s - swords ?loc - cells)  (connected ?from - cells ?to - cells)  (has-monster ?loc - cells)  (has-trap ?loc - cells)  (holding ?s - swords)  (is-destroyed ?obj)  (trap-disarmed ?loc))
+    (:action destroy-sword
+        :parameters (?s - swords)
+        :precondition (and (holding ?s) (not (is-destroyed ?s)))
+        :effect (and (not (holding ?s)) (arm-free) (is-destroyed ?s))
+    )
+     (:action disarm-trap
+        :parameters (?loc - cells)
+        :precondition (and (at-hero ?loc) (has-trap ?loc) (arm-free))
+        :effect (and (trap-disarmed ?loc) (not (arm-free)))
+    )
+     (:action move
+        :parameters (?from - cells ?to - cells)
+        :precondition (and (at-hero ?from) (connected ?from ?to) (not (has-trap ?from)) (not (has-monster ?to)) (not (has-trap ?to)) (not (is-destroyed ?to)))
+        :effect (and (not (at-hero ?from)) (is-destroyed ?from) (at-hero ?to))
+    )
+     (:action move-to-monster
+        :parameters (?from - cells ?to - cells)
+        :precondition (and (at-hero ?from) (has-monster ?to) (connected ?from ?to))
+        :effect (and (not (at-hero ?from)) (at-hero ?to))
+    )
+     (:action move-to-trap
+        :parameters (?from - cells ?to - cells)
+        :precondition (and (at-hero ?from) (connected ?from ?to))
+        :effect (and (not (at-hero ?from)) (at-hero ?to) (has-trap ?to))
+    )
+     (:action pick-sword
+        :parameters (?loc - cells ?s - swords)
+        :precondition (and (at-hero ?loc) (at-sword ?s ?loc) (arm-free))
+        :effect (and (not (arm-free)) (not (at-sword ?s ?loc)) (holding ?s))
+    )
+)

@@ -1,0 +1,2 @@
+[console_scripts]
+better-leveraging-llm-to-construct-world-models = better_leveraging_llm_to_construct_world_models.__main__:main

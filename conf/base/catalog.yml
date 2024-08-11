@@ -1,0 +1,74 @@
+# --- model init ---
+cross_encoder_model: # cross_encoder_model from setup_sentence_encoder pipeline
+  type: MemoryDataset
+  copy_mode: assign
+
+# --- analyzing cosine similarity ---
+cosine_sim_comparison_data#csv:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/cosine_sim_comparison_of_vanilla_model/cosine_sim_comparison_data.csv
+
+boxplot_cosine_sim_comparison#pdf:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/cosine_sim_comparison_of_vanilla_model/boxplot_cosine_sim_comparison.pdf
+  save_args:
+    format: pdf
+
+boxplot_cosine_sim_with_exp#pdf:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/cosine_sim_comparison_of_vanilla_model/boxplot_cosine_sim_with_exp_in_answer.pdf
+  save_args:
+    format: pdf
+
+# --- End of analyzing cosine similarity ---
+
+# --- Fine-tuning sentence encoder ---
+validation_set_cosine_sim_comparison_data_after_finetune#csv:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/cosine_sim_comparison_after_finetune/cosine_sim_comparison_data.csv
+
+testing_set_cosine_sim_comparison_data_after_finetune#csv:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/cosine_sim_comparison_after_finetune/testing_set_cosine_sim_comparison_data.csv
+
+validation_set_cosine_sim_comparison_after_finetune#pdf:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/cosine_sim_comparison_after_finetune/violinplot_cosine_sim_comparison_after_finetune.pdf
+  save_args:
+    format: pdf
+
+testing_set_cosine_sim_comparison_after_finetune#pdf:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/cosine_sim_comparison_after_finetune/testing_set_violinplot_cosine_sim_comparison_after_finetune.pdf
+  save_args:
+    format: pdf
+
+# ----
+
+# --- conformal_prediction_filtering ---
+# we will calculate cp threshold 
+cp_threshold#json:
+  type: json.JSONDataset
+  filepath: data/03_primary/cp_threshold/cp_threshold.json
+
+# ---
+
+# --- action_schema_combination ---
+action_combi_analysis#csv:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/action_combi_analysis/cp_filt_${runtime_params:use_cp, false}_action_combi_analysis.csv
+
+# DONE also need graph to show how cp semantic validator helps to prune the action schema
+
+# --- bisim eval ---
+bisim_evaluation_results#csv:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/bisim_evaluation_results/bisim_evaluation_results.csv
+
+
+# --- human eval ---
+human_evaluation_results#csv:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/human_evaluation_results/human_evaluation_results.csv
+
+# TODO also need graph to show how human eval prefer PDDL to plan 

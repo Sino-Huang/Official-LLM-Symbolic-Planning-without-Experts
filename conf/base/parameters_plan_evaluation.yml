@@ -1,0 +1,9 @@
+# This is a boilerplate parameters config generated for pipeline 'plan_evaluation'
+# using Kedro 0.19.6.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.6/configuration/parameters.html
+plan_evaluation_cfg:
+  top_k: 2 
+  ensemble_size: 10
+  cp_alpha: 0.2

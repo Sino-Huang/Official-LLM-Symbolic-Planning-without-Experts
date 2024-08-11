@@ -1,0 +1,26 @@
+
+ --- OK.
+ Match tree built with 30 nodes.
+
+PDDL problem description loaded: 
+	Domain: LIBRARYWORLD
+	Problem: ORGANIZE-BOOKS
+	#Actions: 30
+	#Fluents: 31
+Goals found: 2
+Goals_Edges found: 2
+Starting search with 1-BFWS...
+--[2 / 0]--
+--[2 / 2]--
+--[2 / 3]--
+--[1 / 0]--
+--[1 / 4]--
+--[1 / 5]--
+--[1 / 6]--
+--[0 / 0]--
+--[0 / 4]--
+Total time: 0.000134
+Nodes generated during search: 34
+Nodes expanded during search: 15
+Plan found with cost: 6
+Fast-BFS search completed in 0.000134 secs

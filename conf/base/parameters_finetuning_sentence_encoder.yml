@@ -1,0 +1,13 @@
+# This is a boilerplate parameters config generated for pipeline 'finetuning_sentence_encoder'
+# using Kedro 0.19.6.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.6/configuration/parameters.html
+
+finetuning_encoder_cfg:
+  eval_negative_weights: [0.0, 0.3, 0.7] # ratio of selecting easy, semi-hard, hard negatives from the dataset 
+  train_negative_weights: [0.0, 0.4, 0.6]
+  train_batch_size: 256
+  training_epoch: 40
+  is_finetune_complete: true 
+  best_model_path: "data/06_models/finetuned_sentence_encoder_batch_256_2024-07-06_20-18-22/checkpoint-850"

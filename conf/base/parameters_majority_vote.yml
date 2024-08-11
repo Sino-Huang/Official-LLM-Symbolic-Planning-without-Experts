@@ -1,0 +1,12 @@
+# This is a boilerplate parameters config generated for pipeline 'generate_schema_pool'
+# using Kedro 0.19.6.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.6/configuration/parameters.html
+generate_schema_pool_cfg:
+  model_name: "glm-4-0520"
+  model_type: "zhipuai" # zhipuai | openai, we only support zhipuai, openai has knowledge leak issue
+  top_p: 0.3
+  temperature: 0.3
+  max_tokens: 1024 
+  ensemble_size: 40

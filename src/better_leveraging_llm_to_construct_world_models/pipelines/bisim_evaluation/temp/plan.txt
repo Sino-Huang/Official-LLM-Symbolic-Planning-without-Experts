@@ -1,0 +1,6 @@
+(remove-from-shelf book3 book1 reference)
+(place-on-table book3)
+(take-from-table book2)
+(place-on-shelf book2 book3 non_fiction)
+(take-from-table book1)
+(place-on-shelf book1 book2 fiction)

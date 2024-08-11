@@ -1,0 +1,9 @@
+{"plan": ["move-to-sword", "pick-sword", "move-to-trap", "disarm-trap", "move", "move"], "heuristic": 8.83}
+{"plan": ["move-to-sword", "pick-sword", "move-to-trap", "disarm-trap", "move", "move"], "heuristic": 8.83}
+{"plan": ["move-to-sword", "pick-sword", "move-to-trap", "disarm-trap", "move", "move"], "heuristic": 8.83}
+{"plan": ["move-to-sword", "pick-sword", "move-to-trap", "disarm-trap", "move-to-monster", "move"], "heuristic": 8.67}
+{"plan": ["move-to-sword", "pick-sword", "move-to-trap", "disarm-trap", "move-to-monster", "move", "move", "move", "move", "move"], "heuristic": 8.6}
+{"plan": ["move-to-sword", "pick-sword", "move-to-trap", "disarm-trap", "move-to-monster", "move", "move", "move", "move", "move"], "heuristic": 8.6}
+{"plan": ["move-to-sword", "pick-sword", "move-to-trap", "disarm-trap", "move-to-monster", "move", "move", "move", "move", "move"], "heuristic": 8.6}
+{"plan": ["move-to-sword", "pick-sword", "move-to-trap", "disarm-trap", "move-to-monster", "move", "move", "move", "move"], "heuristic": 8.56}
+{"plan": ["move-to-sword", "pick-sword", "move-to-trap", "disarm-trap", "move-to-monster", "move", "move", "move", "move"], "heuristic": 8.56}

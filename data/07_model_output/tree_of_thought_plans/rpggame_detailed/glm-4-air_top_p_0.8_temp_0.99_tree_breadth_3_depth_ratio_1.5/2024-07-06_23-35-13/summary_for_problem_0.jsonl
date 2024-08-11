@@ -1,0 +1,11 @@
+{"plan": ["move (from cell5 to cell4)", "pick-sword (sword1 in cell4)", "move (from cell4 to cell3)", "move (from cell3 to cell2)", "disarm-trap (in cell2)", "move (from cell2 to cell1)"], "heuristic": 9.17}
+{"plan": ["move (from cell5 to cell4)", "pick-sword (sword1 in cell4)", "move (from cell4 to cell3)", "move (from cell3 to cell2)", "disarm-trap (in cell2)", "move (from cell2 to cell1)"], "heuristic": 9.17}
+{"plan": ["move (from cell5 to cell4)", "pick-sword (sword1 in cell4)", "move (from cell4 to cell3)", "move (from cell3 to cell2)", "disarm-trap (in cell2)", "move (from cell2 to cell1)"], "heuristic": 9.17}
+{"plan": ["move (from cell5 to cell4)", "pick-sword (from cell4)", "move (from cell4 to cell1)"], "heuristic": 9.0}
+{"plan": ["move (from cell5 to cell4)", "pick-sword (from cell4)", "move (from cell4 to cell3)", "move-to-monster (from cell3 to cell2)", "move (from cell2 to cell1)"], "heuristic": 9.0}
+{"plan": ["move (from cell5 to cell4)", "pick-sword (from cell4)", "move (from cell4 to cell3)", "move-to-monster (from cell3 to cell2)", "move (from cell2 to cell1)"], "heuristic": 9.0}
+{"plan": ["move (from cell5 to cell4)", "pick-sword (from cell4)", "move (from cell4 to cell3)", "move-to-monster (from cell3 to cell2)", "move (from cell2 to cell1)"], "heuristic": 9.0}
+{"plan": ["move (from cell5 to cell4)", "pick-sword (sword1 in cell4)", "move (from cell4 to cell3)", "move (from cell3 to cell2)", "move (from cell2 to cell1)"], "heuristic": 9.0}
+{"plan": ["move (from cell5 to cell4)", "pick-sword (from cell4)", "move (from cell4 to cell3)", "move-to-monster (from cell3 to cell8)", "move (from cell8 to cell7)", "move (from cell7 to cell2)", "disarm-trap (in cell2)", "move (from cell2 to cell1)"], "heuristic": 8.38}
+{"plan": ["move (from cell5 to cell4)", "pick-sword (from cell4)", "move (from cell4 to cell3)", "move-to-monster (from cell3 to cell8)", "move (from cell8 to cell7)", "move (from cell7 to cell2)", "disarm-trap (in cell2)", "move (from cell2 to cell1)"], "heuristic": 8.38}
+{"plan": ["move (from cell5 to cell4)", "pick-sword (from cell4)", "move (from cell4 to cell3)", "move-to-monster (from cell3 to cell8)", "move (from cell8 to cell7)", "move (from cell7 to cell2)", "disarm-trap (in cell2)", "move (from cell2 to cell1)"], "heuristic": 8.38}

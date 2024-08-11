@@ -1,0 +1,9 @@
+{"plan": ["take-from-table Book2", "place-on-shelf Book2 Book3", "take-from-table Book1", "place-on-shelf Book1 Book2"], "heuristic": 9.0}
+{"plan": ["take-from-table Book2", "place-on-shelf Book2 Book3", "take-from-table Book1", "place-on-shelf Book1 Book2"], "heuristic": 9.0}
+{"plan": ["take-from-table Book2", "place-on-shelf Book2 Book3", "take-from-table Book1", "place-on-shelf Book1 Book2"], "heuristic": 9.0}
+{"plan": ["take-from-table Book2", "place-on-shelf Book2 onto Book3", "take-from-table Book1", "place-on-shelf Book1 onto Book2"], "heuristic": 9.0}
+{"plan": ["take-from-table Book2", "place-on-shelf Book2 onto Book3", "take-from-table Book1", "place-on-shelf Book1 onto Book2"], "heuristic": 9.0}
+{"plan": ["take-from-table Book2", "place-on-shelf Book2 onto Book3", "take-from-table Book1", "place-on-shelf Book1 onto Book2"], "heuristic": 9.0}
+{"plan": ["take-from-table Book2", "place-on-shelf Book2 onto Book3", "remove-from-shelf Book1", "place-on-shelf Book1 onto Book2"], "heuristic": 9.0}
+{"plan": ["take-from-table Book2", "place-on-shelf Book2 onto Book3", "remove-from-shelf Book1", "place-on-shelf Book1 onto Book2"], "heuristic": 9.0}
+{"plan": ["take-from-table Book2", "place-on-shelf Book2 onto Book3", "remove-from-shelf Book1", "place-on-shelf Book1 onto Book2"], "heuristic": 9.0}

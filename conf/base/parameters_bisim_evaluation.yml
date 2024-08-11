@@ -1,0 +1,10 @@
+# This is a boilerplate parameters config generated for pipeline 'bisim_evaluation'
+# using Kedro 0.19.6.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.6/configuration/parameters.html
+bisim_evaluation_cfg:
+  top_k: 10 
+  val_path: "~/.vscode-server/data/User/globalStorage/jan-dolejsi.pddl/val/Val-20210401.1-Linux/bin/Validate"
+  ensemble_size: 25
+  cp_alpha: 0.2
